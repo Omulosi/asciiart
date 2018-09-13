@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a img {
+  border: none;
+}
+/* END RESET*/html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a img {
+  border: none;
+}
+/* END RESET*/
+
+/* GLOBAL STYLES */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+body {
+	font-style: sans-serif;
+}
+
+/* HOME STYLES */
+.home-content {
+  margin: 200px 0 85px;
+}
+.home-content pre {
+  font-style: normal;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 1rem 0;
+}
+
+/* MAIN CONTENT STYLES */
+
+body {
+  display: flex;
+  font-style: helvetica, arial, sans-serif;
+}
+.side-panel {
+  background-color: #f90;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  flex-basis: 250px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.nav {
+  padding: 1.2em;
+  margin-top: 6rem;
+}
+
+.nav > ul {
+  list-style: none;
+}
+
+.nav > ul > li {
+  padding: 1.2em 0;
+}
+.nav li > a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1.3em;
+  line-height: 1em;
+  font-family: monospace;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.category {
+  list-style: none;
+  position: relative;
+  left: 2em;
+}
+.category > li a {
+  font-size: 1em;
+}
+
+.category > li {
+  padding: 0.5em;
+  margin: 0;
+}
+
+
+/* ADD ART SECTION*/
+
+.form-title {
+  margin: 1.5rem auto;
+  width: 400px;
+  padding-left: 80px;
+}
+pre.no-space {
+  font-family: monospace;
+  font-size: 8pt;
+  line-height: 95%;
+  color: #222;
+  overflow: visible;
+}
+
+.red1 {
+  color: #900;
+}
+
+.form {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.form label {
+  display: block;
+  margin: 0.5em 0;
+  font-style: italic;
+  color: #333;
+}
+
+.form div + div {
+  margin: 1rem 0;
+}
+
+.form input[type="text"] {
+  width: 25vw;
+  font-size: 0.8em;
+  border-radius: 4px;
+  padding: 0.5em;
+  font-family: monospace;
+}
+.form input[type="text"]:focus {
+  border: 1px solid #f90;
+}
+
+.form select {
+  width: 25vw;
+  font-size: 1em;
+  border-radius: 4px;
+  color: #555;
+  font-family: monospace;
+}
+
+.art textarea {
+  width: 45vw;
+  height: 40vh;
+  font-family: monospace;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+
+.btn {
+	background-color: #f90;
+	display: inline-block;
+	padding: 0.3rem 2rem;
+	border-radius: 4px;
+	font-size: 1.2em;
+	cursor: pointer;
+  border: 1px solid #f90;
+  margin-top: 0.5em;
+  color: #444;
+}
+
+.error {
+  margin: 0.5em 0;
+}
+.error p {
+  color: #f00;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+/* FOOTER STYLES */
+
+.footer hr {
+	border-top: 1px solid #eaebec;
+}
+
+.footer h2 {
+	margin-top: 2em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.social-links ul {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.social-links ul > li {
+	list-style: none;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	color: #fff;
+	display: inline-block;
+	margin: 0 0.3em;
+	background-color: #aaa;
+	line-height: 2.5rem;
+	transition: all 0.1s ease-in-out;
+}
+
+.footer p {
+	text-align: center;
+	color: #222;
+	font-size: 0.9em;
+	margin-top: 2.5em;
+}
+
+.footer {
+	padding: 5em 1em 1.5em;
+}
+
+.social-links ul > li:hover {
+	background-color: #ff9900;
+}
+
+/* CATEGORY SECTION */
+.art {
+  border-top: 1px solid #333;
+  padding: 1em;
+}
+
+.ascii-arts {
+  margin-top: 1rem;
+}
+
+.ascii-arts div + div {
+  margin: 0.8em 0;
+}
+
+.ascii-arts h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  font-family: monospace;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.art pre {
+  font-family: monospace;
+}
