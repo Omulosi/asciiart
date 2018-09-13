@@ -1,0 +1,64 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+
+<section class="art-content">
+
+  <div class="container">
+
+
+  <div class="form-title">
+
+    <pre class="no-space">
+
+  <span class="red1">|\/|     /\  _ _oo   /\ .__|_</span>
+  <span class="red1">|  |\/  /--\_&gt;(_||  /--\|  |_</span>
+      <span class="red1">/ </span>
+
+  </pre>
+  </div>
+
+
+
+  <form method="post" action="" class="form">
+    <div class="title">
+      <label for="title" >title</label>
+      <input name="title" id="title" type="text" value="{{ title }}">
+    </div>
+
+    <div>
+      <label for="category">category</label>
+      <select name="category" id="category">
+          <option value="">--Please choose a category--</option>
+          <option value="animals">Animals</option>
+          <option value="books">Books</option>
+          <option value="cartoons">Cartoons</option>
+          <option value="comics">Comics</option>
+          <option value="plants">Plants</option>
+          <option value="people">People</option>
+          <option value="logos">Logos</option>
+          <option value="toys">Toys</option>
+          <option value="weapons">Weapons</option>
+      </select>
+    </div>
+
+    <div class="art">
+      <label for="ascii-art">ascii-Art</label>
+      <textarea id="ascii-art" name="art">{{art}}</textarea>
+    </div>
+
+    <div class="error">
+      {% if error %}
+      <p>{{ error }} </p>
+      {% endif %}
+    </div>
+
+    <div>
+      <button type="submit" class="btn">Submit</button>
+    </div>
+  </form>
+
+</div>
+</section>
+{% endblock %}

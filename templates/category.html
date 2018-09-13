@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+
+{% block content %}
+
+<section class="category-content">
+  <div class="container ascii-arts">
+
+    <h1>{{ category }}</h1>
+    {% for art in arts %}
+      <div class="art">
+        {{ art.title }}
+        <pre>
+          {{ art.art }}
+        </pre>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
