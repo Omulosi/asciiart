@@ -6,20 +6,20 @@ This application was developed on the Google App Engine platform.
 
 To run this applicaton, you need to have the App Engine SDK for Python installed on your machine. Linux users can follow the steps listed below:
 1. Download the App Engine SDK for Python.
-2. Unzip the google_appengine_1.9.75.zip file that you downloaded, for example:
-```
-unzip google_appengine_1.9.75.zip
-```
+2. Unzip the google_appengine_1.9.75.zip file that you downloaded:
+  ```
+  unzip google_appengine_1.9.75.zip
+  ```
 3. Add the google_appengine directory to your PATH:
-```
-export PATH=$PATH:DIRECTORY_PATH/google_appengine/
-```
+  ```
+  export PATH=$PATH:DIRECTORY_PATH/google_appengine/
+  ```
 4. Ensure Python 2.7 is installed on your machine.
 
-After completing this steps, you can clone this repo, cd into the project directory and run the following command to start a local server:
-```
-dev_appserver .
-```
+After completing these steps, you can clone this repo, cd into the project directory and run the following command to start a local server:
+  ```
+  dev_appserver.py .
+  ```
 
 Note that the period stands for the current directory.
 
@@ -29,14 +29,14 @@ To read more about developing App Engine applications, check out this [link](htt
 
 ## Below is a preview of the site
 
-### Home Page
+### The Home Page
 
 ![home page](/static/img/home-page.png)
 
-### Sample ascii art listing for animals category Page
+### Sample ascii art listing for books category Page
 
 ![animals ascii art](/static/img/ascii-arts.png)
 
-### Input form for adding ascii art
+### Input form for submitting ascii art
 
 ![submit ascii-art](/static/img/form.png)
